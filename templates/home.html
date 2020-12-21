@@ -2,13 +2,17 @@
 {% block content %}
 
 <h1>Welcome to my blog </h1>
+    <br>
+    <br>
     <ul>
 {% for post in object_list %}
-    <li>
-        <a href={% url 'article_detail' post.pk  %}> {{ post.title }}</a> -   {{ post.author.first_name }}  {{ post.author.last_name }}
-        <br>
+         <li>
 
+        <a href={% url 'article_detail' post.pk  %}>{{ post.title }}</a>  -   {{ post.author.first_name }}  {{ post.author.last_name }}
+            <small> <a href="{% url 'update_post' post.pk %}"> (Edit Post) </a></small>
+             <br>
     {{ post.body }}
+
     </li>
     </ul>
 
