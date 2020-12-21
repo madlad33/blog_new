@@ -8,7 +8,8 @@
 
 <h1> {{ blogpost.title }}  </h1>
 <small> {{blogpost.author.first_name }} {{ blogpost.author.last_name }} <small> <a href="{% url 'update_post' blogpost.pk %}"> (Edit Post) </a></small> <small> <a href="{% url 'delete_post' blogpost.pk %}"> (Delete Post) </a></small></small> <br>
-<h2>{{blogpost.body }}</h2>
+<small>at {{ blogpost.date_posted }}   </small>
+    <h2>{{blogpost.body }}</h2>
 
 
 {% endblock %}

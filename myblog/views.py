@@ -1,20 +1,23 @@
 from django.contrib import messages
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView,DetailView,CreateView,UpdateView,DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Blogpost
-from .forms import PostForm,EditForm
+from .forms import PostForm, EditForm
+
 
 # Create your views here.
 # def home(request):
 #     return render(request, 'home.html', {})
 class Homeview(ListView):
-    model=Blogpost
+    model = Blogpost
     template_name = 'home.html'
+    ordering = ['-date_posted']
 
 class BlogDetail(DetailView):
-    model=Blogpost
+    model = Blogpost
     template_name = 'blog_detail.html'
+
 
 class Addview(CreateView):
     model = Blogpost
@@ -27,10 +30,12 @@ class UpdateBlogView(UpdateView):
     model = Blogpost
     template_name = 'update_post.html'
     form_class = EditForm
+
     # fields = ['title','title_tag','body']
     def get_success_url(self):
-        messages.success(self.request,'Profile updated')
+        messages.success(self.request, 'Profile updated')
         return '/'
+
 
 class DeleteBlogView(DeleteView):
     model = Blogpost
