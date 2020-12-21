@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views.generic import ListView,DetailView,CreateView,UpdateView,DeleteView
 from .models import Blogpost
 from .forms import PostForm,EditForm
@@ -31,3 +32,11 @@ class UpdateBlogView(UpdateView):
         messages.success(self.request,'Profile updated')
         return '/'
 
+class DeleteBlogView(DeleteView):
+    model = Blogpost
+    template_name = 'delete_post.html'
+
+    # success_url = reverse_lazy('home')
+
+    def get_success_url(self):
+        return reverse_lazy('home')
