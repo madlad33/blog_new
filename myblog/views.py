@@ -2,8 +2,8 @@ from django.contrib import messages
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Blogpost
-from .forms import PostForm, EditForm
+from .models import Blogpost,Categories
+from .forms import PostForm, EditForm,CategoryForm
 
 
 # Create your views here.
@@ -45,3 +45,8 @@ class DeleteBlogView(DeleteView):
 
     def get_success_url(self):
         return reverse_lazy('home')
+
+class CreateCategoryView(CreateView):
+    model = Categories
+    template_name = 'add_category.html'
+    form_class = CategoryForm

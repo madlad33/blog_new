@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e0b42f-d050-4173-be34-a95f08357366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/members/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/templates/mem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/templates/registration/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/members/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myblog/migrations/0003_auto_20201221_1645.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myblog/migrations/0004_auto_20201222_1203.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myblog/migrations/0005_auto_20201222_1248.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/add_category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_new/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_new/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_new/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_new/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delete_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delete_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/update_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/update_post.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +121,9 @@
       <workItem from="1607968232530" duration="3843000" />
       <workItem from="1607972841489" duration="2925000" />
       <workItem from="1608011885175" duration="6047000" />
-      <workItem from="1608543263218" duration="7062000" />
+      <workItem from="1608543263218" duration="9316000" />
+      <workItem from="1608566595393" duration="612000" />
+      <workItem from="1608618499114" duration="4325000" />
     </task>
     <servers />
   </component>
