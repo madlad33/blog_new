@@ -9,8 +9,12 @@
 <h1> {{ blogpost.title }}  </h1>
 <small> {{blogpost.author.first_name }} {{ blogpost.author.last_name }} <small>
     {% if user.is_authenticated %}
+        {% if user.id == blogpost.author.id %}
     <a href="{% url 'update_post' blogpost.pk %}"> (Edit Post) </a></small> <small> <a href="{% url 'delete_post' blogpost.pk %}"> (Delete Post) </a></small></small> <br>
 {% endif %}
+        {% endif %}
+
+
     <small>at {{ blogpost.date_posted }}   </small>
     {{blogpost.body | safe }}
 

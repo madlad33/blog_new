@@ -14,6 +14,11 @@ class Homeview(ListView):
     template_name = 'home.html'
     ordering = ['-date_posted']
 
+    def get_context_data(self, *args,**kwargs):
+        cat_menu = Categories.objects.all()
+        context = super(Homeview, self).get_context_data(*args, **kwargs)
+        context['cat_menu'] = cat_menu
+        return context
 
 class BlogDetail(DetailView):
     model = Blogpost
