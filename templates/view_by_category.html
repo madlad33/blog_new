@@ -1,14 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<h1>Welcome to my blog {{ user.username }} </h1>
+<h1>Blogs associated with {{ category }} </h1>
     <br>
     <br>
     <ul>
-{% for post in object_list %}
+{% for post in post_by_category %}
          <li>
 
-        <a href={% url 'article_detail' post.pk  %}>{{ post.title }}</a> - <a href="{% url 'url_category' post.categories|slugify%}">{{ post.categories }}</a> -   {{ post.author.first_name }}  {{ post.author.last_name }}
+        <a href={% url 'article_detail' post.pk  %}>{{ post.title }}</a>  -   {{ post.author.first_name }}  {{ post.author.last_name }}
             {% if user.is_authenticated%}
              <small> <a href="{% url 'update_post' post.pk %}"> (Edit Post) </a>
             </small>

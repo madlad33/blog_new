@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e0b42f-d050-4173-be34-a95f08357366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myblog/migrations/0004_auto_20201222_1203.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myblog/migrations/0005_auto_20201222_1248.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/add_category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_new/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myblog/migrations/0006_categories_slug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myblog/migrations/0007_auto_20201223_1552.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/view_by_category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/delete_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delete_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/update_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/update_post.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -60,7 +54,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -123,7 +117,10 @@
       <workItem from="1608011885175" duration="6047000" />
       <workItem from="1608543263218" duration="9316000" />
       <workItem from="1608566595393" duration="612000" />
-      <workItem from="1608618499114" duration="4325000" />
+      <workItem from="1608618499114" duration="9320000" />
+      <workItem from="1608664659860" duration="16000" />
+      <workItem from="1608715676206" duration="1029000" />
+      <workItem from="1608716737968" duration="3387000" />
     </task>
     <servers />
   </component>

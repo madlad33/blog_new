@@ -2,8 +2,8 @@ from django.contrib import messages
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Blogpost,Categories
-from .forms import PostForm, EditForm,CategoryForm
+from .models import Blogpost, Categories
+from .forms import PostForm, EditForm, CategoryForm
 
 
 # Create your views here.
@@ -14,9 +14,11 @@ class Homeview(ListView):
     template_name = 'home.html'
     ordering = ['-date_posted']
 
+
 class BlogDetail(DetailView):
     model = Blogpost
     template_name = 'blog_detail.html'
+
 
 
 class Addview(CreateView):
@@ -24,6 +26,8 @@ class Addview(CreateView):
     form_class = PostForm
     template_name = 'add_blog.html'
     # fields = ('title','author','body','title_tag')
+    def get_success_url(self):
+        return reverse_lazy('home')
 
 
 class UpdateBlogView(UpdateView):
@@ -46,7 +50,14 @@ class DeleteBlogView(DeleteView):
     def get_success_url(self):
         return reverse_lazy('home')
 
+
 class CreateCategoryView(CreateView):
     model = Categories
     template_name = 'add_category.html'
     form_class = CategoryForm
+
+
+def CategoryUrlView(request, category):
+    post_by_category = Blogpost.objects.filter(categories__iexact=category.replace('-',' '))
+
+    return render(request, 'view_by_category.html', {'category':category.replace('-',' '), 'post_by_category': post_by_category})
