@@ -5,12 +5,13 @@ from django.urls import reverse
 from datetime import datetime,date
 # Create your models here.
 from blog_new.util import unique_slug_generator
-
+from ckeditor.fields import RichTextField
 
 class Blogpost(models.Model):
     title=models.CharField(max_length=100)
     title_tag = models.CharField(max_length=100)
-    body=models.TextField(max_length=1000000000)
+    # body=models.TextField(max_length=1000000000)
+    body=RichTextField(blank=True,null=True)
     author=models.ForeignKey(User,on_delete=models.CASCADE)
     date_posted=models.DateTimeField(auto_now_add=True)
     categories=models.CharField(max_length=100)
