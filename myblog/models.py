@@ -15,11 +15,23 @@ class Blogpost(models.Model):
     date_posted=models.DateTimeField(auto_now_add=True)
     categories=models.CharField(max_length=100)
     slug = models.SlugField(max_length = 250, null = True, blank = True)
+    like=models.ManyToManyField(User,related_name='likes')
     def __str__(self):
         return self.title + ' | ' + str(self.author)
 
     def get_absolute_url(self):
         return reverse('article_detail',args=str((self.id)))
+
+    def total_likes(self):
+        return self.like.count()
+
+    def total_like_after_dislike(self):
+        if self.like:
+            self.like-=1
+            return self.like.count()
+        else:
+            return self.like.count()
+
 
 
 def pre_save_receiver(sender, instance, *args, **kwargs):
