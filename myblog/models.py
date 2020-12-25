@@ -17,6 +17,7 @@ class Blogpost(models.Model):
     categories=models.CharField(max_length=100)
     slug = models.SlugField(max_length = 250, null = True, blank = True)
     like=models.ManyToManyField(User,related_name='likes')
+    snippet=models.CharField(max_length=300)
     def __str__(self):
         return self.title + ' | ' + str(self.author)
 
