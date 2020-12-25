@@ -16,6 +16,14 @@
 
 
     <small>at {{ blogpost.date_posted }}   </small>
+    <br>
+    <br>
+    {% if blogpost.images %}
+    <img width="600" height="300" src="{{ blogpost.images.url }}" >
+    {% endif %}
+
+    <br>
+    <br>
     {{blogpost.body | safe }}
 <br>
     <br>

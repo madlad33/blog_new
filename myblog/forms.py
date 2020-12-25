@@ -4,7 +4,7 @@ from .models import Blogpost,Categories
 class PostForm(forms.ModelForm):
     class Meta:
         model=Blogpost
-        fields=('title','title_tag','author','categories','body','snippet')
+        fields=('title','title_tag','author','categories','body','snippet','images')
 
         categories=Categories.objects.all().values_list('name','name')
         widgets={

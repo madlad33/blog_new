@@ -18,6 +18,7 @@ class Blogpost(models.Model):
     slug = models.SlugField(max_length = 250, null = True, blank = True)
     like=models.ManyToManyField(User,related_name='likes')
     snippet=models.CharField(max_length=300)
+    images=models.ImageField(blank=True,null=True,upload_to='images/')
     def __str__(self):
         return self.title + ' | ' + str(self.author)
 
