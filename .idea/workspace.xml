@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e0b42f-d050-4173-be34-a95f08357366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog_new/secret_setings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myblog/migrations/0012_userprofile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_new/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_new/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/members/templates/registration/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/members/templates/registration/edit_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +50,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="L:\blog_new" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="L:\blog_new\templates\static" />
       <recent name="L:\blog_new\static" />
@@ -128,7 +125,7 @@
       <workItem from="1608814715984" duration="3494000" />
       <workItem from="1608901429440" duration="8656000" />
       <workItem from="1608921561460" duration="27000" />
-      <workItem from="1609948498260" duration="1166000" />
+      <workItem from="1609948498260" duration="2090000" />
     </task>
     <servers />
   </component>
