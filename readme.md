@@ -1,6 +1,6 @@
-![](blog.gif)
 
-#Blog
+
+# Blog
 - Created a blog with CRUD functionality.
 - Used django user model to create users.
 - Uses Django authentication system to authenticate users and gave permissions to appropriate users to edit or delete their own posts.

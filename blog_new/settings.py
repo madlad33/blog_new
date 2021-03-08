@@ -14,7 +14,7 @@ from pathlib import Path
 from . import secret_setings
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+SECRET_KEY = 'g6(f498^#=c-lbe-g(7=^s(q(&cnr!i8hdoveu00%0!-6h9f9hsdadas'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/

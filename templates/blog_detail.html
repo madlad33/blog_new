@@ -27,7 +27,7 @@
     {{blogpost.body | safe }}
 <br>
     <br>
-
+    {% if user.is_authenticated %}
     <form action="{% url 'like_post' blogpost.pk %}" method="post">
     {%csrf_token %}
         {% if liked %}
@@ -35,6 +35,7 @@
             {% else %}
                 <button type="submit"name="post_id" value="{{ blogpost.id }}" class='btn btn-primary' >Like </button>- {{ total_likes }} Likes
     {% endif %}
-    </form>
 
+    </form>
+{% endif %}
 {% endblock %}
