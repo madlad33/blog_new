@@ -24,7 +24,9 @@ SECRET_KEY = 'g6(f498^#=c-lbe-g(7=^s(q(&cnr!i8hdoveu00%0!-6h9f9hsdadas'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'blog-tanmay.herokuapp.com'
+]
 
 
 # Application definition
