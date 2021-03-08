@@ -1,4 +1,4 @@
-
+![](blog.gif)
 
 # Blog
 - Created a blog with CRUD functionality.
